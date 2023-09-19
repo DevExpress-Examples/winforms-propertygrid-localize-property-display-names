@@ -3,18 +3,30 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2407)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Winforms Property Grid - Property display name localization
+
+This example applies the `System.ComponentModel.DisplayName` attribute to properties to enable localization:
+
+![Winforms Property Grid - Property display name localization](https://raw.githubusercontent.com/DevExpress-Examples/how-to-localize-the-properties-display-names-for-the-propertygridcontrol-e2407/13.1.4%2B/media/winforms-propertygrid-localization.png)
+
+```csharp
+public class Product {
+    // ...
+    [CustomDisplayNameAttribute("ProductCode")]
+    public string ProductCode {
+        get { return productCode; }
+        set { productCode = value; }
+    }
+    [CustomDisplayNameAttribute("Name")]
+    public string Name {
+        get { return name; }
+        set { name = value; }
+    }
+}
+```
+
+
+## Files to Review
 
 * [Form1.cs](./CS/WindowsApplication3/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication3/Form1.vb))
-* [Program.cs](./CS/WindowsApplication3/Program.cs) (VB: [Program.vb](./VB/WindowsApplication3/Program.vb))
-<!-- default file list end -->
-# How to localize the properties' display names for the PropertyGridControl
-
-
-<p>This example demonstrates how to localize the properties' display names in the PropertyGridControl. <br />
-To accomplish this task, the properties should be decorated with a custom System.ComponentModel.DisplayName attribute.</p>
-
-<br/>
-
-
