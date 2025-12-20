@@ -9,7 +9,7 @@
 
 This example applies the `System.ComponentModel.DisplayName` attribute to properties to enable localization:
 
-![Winforms Property Grid - Property display name localization](https://raw.githubusercontent.com/DevExpress-Examples/how-to-localize-the-properties-display-names-for-the-propertygridcontrol-e2407/13.1.4%2B/media/winforms-propertygrid-localization.png)
+![Winforms Property Grid - Property display name localization](media/winforms-propertygrid-localization.png)
 
 ```csharp
 public class Product {
@@ -38,3 +38,4 @@ public class Product {
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
